@@ -6,8 +6,105 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Recipe.com</title>
+    <style>
+        .slider .indicators .indicator-item {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            height: 16px;
+            width: 16px;
+            margin: 0 12px;
+            background-color: #e0e0e0;
+            -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            border-radius: 50%;
+        }
+        .slider .indicators .indicator-item.active {
+            background-color:  #e65100;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <!-- Navbar -->
+        <nav class="white">
+            <div class="container">
+                <a href="index.html" class="brand-logo">
+                    <img src="img/logo.png" alt="" class="responsive-img" style="max-width: 150px">
+                </a>
+                <a href="#sidenav" class="sidenav-trigger right orange-text text-darken-4">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="" class="orange-text text-darken-4">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="orange-text text-darken-4">Cakes</a>
+                    </li>
+                    <li>
+                        <a href="" class="orange-text text-darken-4">Soups</a>
+                    </li>
+                    <li>
+                        <a href="" class="orange-text text-darken-4">Chicken</a>
+                    </li>
+                    <li>
+                        <a href="" class="orange-text text-darken-4">Customers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="right sidenav orange darken-4" id="sidenav">
+            <li>
+                <a href="" class="white-text">Home</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Cakes</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Soups</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Chicken</a>
+            </li>
+            <li>
+                <a href="" class="orange-text text-darken-4">Customers</a>
+            </li>
+        </ul>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/cake_fruit.jpg" alt="" class="responsive-img">
+                </li>
+                <li>
+                    <img src="img/shrimp_soup.jpg" alt="" class="responsive-img">
+                </li>
+                <li>
+                    <img src="img/chicken_3.jpg" alt="" class="responsive-img">
+                </li>
+                <li>
+                    <img src="img/dessert_chocolate.jpg" alt="" class="responsive-img">
+                </li>
+                <li>
+                    <img src="img/ginger_cake.jpg" alt="" class="responsive-img">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+            $('.slider').slider({
+                height: 500,
+                interval: 10000, <!--How long the picture stays befor changing; while duration is how long the transition takes-->
+                duration: 5000, 
+            });
+            $('.sidenav').sidenav();
+        });
+    </script
 </body>
 </html>
