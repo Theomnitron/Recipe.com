@@ -25,7 +25,17 @@
         .bold-text{
             font-weight: bold;
         }
+        .intro{
+            font-family: cursive;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .space{
+            padding: 10px;
+        }
     </style>
+
+
 </head>
 <body>
     <header>
@@ -94,7 +104,77 @@
             </ul>
         </div>
     </header>
-    <main></main>
+
+
+    <main>
+        <!-- Intro -->
+        <div class="container">
+            <h1 class="orange-text text-darken-4">Hello there, foodies!</h1>
+            <p class="intro flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, qui unde omnis quisquam culpa nulla, assumenda tenetur consectetur voluptatum ab quis fugiat provident cum cupiditate. Voluptatibus ex iste dolorem maiores quo delectus unde voluptates repellat dolorum odit nesciunt repellendus enim deleniti voluptatum distinctio, dolore illo molestiae! Corrupti nobis alias consectetur sed totam repellendus placeat et modi dolore. Ea qui aliquid dolorum molestias nisi minus esse soluta odit est! Consequuntur, eligendi? Ducimus maiores eaque illo reiciendis cupiditate animi autem velit voluptatum!</p>
+            <br><hr><br>
+            <!-- Collapsibles -->
+            <div class="row">
+                <div class="col s12 m12 l4">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header orange darken-4">
+                                <i class="material-icons white-text">arrow_drop_down_circle</i>
+                                <span class="white-text bold-text">CAKES</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="img/sponge_cake.webp" alt="" class="responsive-img">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
+                                <span class="bold-text orange darken-4 white-text space">ALL CAKE RECIPES.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m12 l4">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header orange darken-4">
+                                <i class="material-icons white-text">arrow_drop_down_circle</i>
+                                <span class="white-text bold-text">SOUPS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="img/mexican_soup.webp" alt="" class="responsive-img">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
+                                <span class="bold-text orange darken-4 white-text space">ALL SOUP RECIPES</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m12 l4">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header orange darken-4">
+                                <i class="material-icons white-text">arrow_drop_down_circle</i>
+                                <span class="white-text bold-text">CHICKENS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="img/chicken_8.webp" alt="" class="responsive-img">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
+                                <span class="bold-text orange darken-4 white-text space">ALL CHICKEN RECIPES</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="orange-text text-darken-4 center-align">What Our Customers Say . . .</h3>
+
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection with-header">
+                        <li class="collection-item avatar">
+                            <i class="material-icons">account_circle</i>
+                            <span class="bold-text orange-text text-darken-4">Lorem</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
@@ -103,6 +183,7 @@
             $('.modal').modal();
             $('.slider').slider({});
             $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
         });
     </script
 </body>
