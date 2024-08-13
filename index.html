@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon"> <!-- favicon: This is for changing the icon that shows left of the website's name -->
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Recipe.com</title>
     <style>
         .slider .indicators .indicator-item {
@@ -64,7 +65,7 @@
 <body>
     <header>
         <!-- Header -->
-        <div class="navbar-fixed" id="top">
+        <div class="navbar-fixed scrollspy" id="top">
             <nav class="white">
                 <div class="container">
                     <a href="index.html" class="brand-logo">
@@ -178,14 +179,14 @@
                         </ul>
                     </div>
                     <div class="col s12 m12 l4">
-                        <ul class="collapsible popout" id="customers">
+                        <ul class="collapsible popout scrollspy" id="customers">
                             <li>
                                 <div class="collapsible-header orange darken-4">
                                     <i class="material-icons white-text">arrow_drop_down_circle</i>
                                     <span class="white-text bold-text">CHICKENS</span>
                                 </div>
                                 <div class="collapsible-body">
-                                    <img src="img/chicken_8.webp" alt="" class="responsive-img materialboxed materialboxed">
+                                    <img src="img/chicken_8.webp" alt="" class="responsive-img materialboxed">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
                                     <a href="#">
                                         <span class="btn btn-flat bold-text orange darken-4 white-text">ALL CAKE RECIPES.</span>
@@ -245,13 +246,13 @@
 
 
         <!-- Cakes -->
-        <div id="cakes"></div>
-        <img src="img/cake.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%" id="cakes">
-        <div class="parallax-container hide-on-med-and-down" id="cakes">
+        <img src="img/cake.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100">
+        <div class="parallax-container hide-on-med-and-down">
             <div class="parallax">
                 <img src="img/cake.jpg" alt="" style="width: 100%">
             </div>
         </div>
+        <div id="cakes" class="scrollspy"></div>
         <br>
 
             <!-- Section Seading, Text, and Cards -->
@@ -411,13 +412,13 @@
             </section>
 
             <!-- Soups -->
-            <div id="soups"></div>
-            <img src="img/soup.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%" id="soups">
-            <div class="parallax-container hide-on-med-and-down" id="soups">
+            <img src="img/soup.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%">
+            <div class="parallax-container hide-on-med-and-down">
                 <div class="parallax">
                     <img src="img/soup.jpg" alt="" style="width: 100%">
                 </div>
             </div>
+            <div id="soups" class="scrollspy"></div>
             <br>
 
             <!-- Section Seading, Text, and Cards -->
@@ -577,13 +578,13 @@
             </section>
 
             <!-- Chickens -->
-            <div id="chickens"></div>
-            <img src="img/chicken.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%" id="chickens">
-            <div class="parallax-container hide-on-med-and-down" id="chickens">
+            <img src="img/chicken.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%">
+            <div class="parallax-container hide-on-med-and-down">
                 <div class="parallax">
                     <img src="img/chicken.jpg" alt="" style="width: 100%">
                 </div>
             </div>
+            <div id="chickens" class="scrollspy"></div>
             <br>
 
             <!-- Section Seading, Text, and Cards -->
@@ -787,6 +788,31 @@
             </div>
             <h5 class="center align orange darken-4 copyright-info">&copy; 2024 Recipes.com | ToluMichael</h5>
     </footer>
+
+    <div class="container">
+        <div class="fixed-action-btn">
+            <a class="btn btn-floating orange darken-4 pulse btn-large">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul>
+                <li>
+                    <a href="#cakes" class="btn-floating orange lighten-1">
+                        <span>CA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#soups" class="btn-floating orange lighten-1">
+                        <span>SO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#chickens" class="btn-floating orange lighten-1">
+                        <span>CH</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script>
@@ -797,6 +823,10 @@
             $('.collapsible').collapsible();
             $('.parallax').parallax();
             $('.materialboxed').materialbox();
+            $('.scrollspy').scrollSpy();
+            $('.fixed-action-btn').floatingActionButton({
+                direction: 'top'
+            });
         });
     </script>
 </body>
