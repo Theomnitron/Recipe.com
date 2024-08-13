@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon"> <!-- favicon: This is for changing the icon that shows left of the website's name -->
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Recipe.com</title>
@@ -54,6 +54,9 @@
             background-color: #e65100;
             text-align: center;
         }
+        .italics{
+            font-style: italic;
+        }
     </style>
 
 
@@ -61,7 +64,7 @@
 <body>
     <header>
         <!-- Header -->
-        <div class="navbar-fixed">
+        <div class="navbar-fixed" id="top">
             <nav class="white">
                 <div class="container">
                     <a href="index.html" class="brand-logo">
@@ -72,19 +75,19 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="" class="orange-text text-darken-4 bold-text">Home</a>
+                            <a href="#top" class="orange-text text-darken-4 bold-text">Home</a>
                         </li>
                         <li>
-                            <a href="" class="orange-text text-darken-4 bold-text">Cakes</a>
+                            <a href="#cakes" class="orange-text text-darken-4 bold-text">Cakes</a>
                         </li>
                         <li>
-                            <a href="" class="orange-text text-darken-4 bold-text">Soups</a>
+                            <a href="#soups" class="orange-text text-darken-4 bold-text">Soups</a>
                         </li>
                         <li>
-                            <a href="" class="orange-text text-darken-4 bold-text">Chicken</a>
+                            <a href="#chickens" class="orange-text text-darken-4 bold-text">Chicken</a>
                         </li>
                         <li>
-                            <a href="" class="orange-text text-darken-4 bold-text">Customers</a>
+                            <a href="#customers" class="orange-text text-darken-4 bold-text">Customers</a>
                         </li>
                     </ul>
                 </div>
@@ -92,37 +95,36 @@
         </div>
         <ul class="right sidenav orange darken-4" id="sidenav">
             <li>
-                <a href="" class="white-text bold-text">Home</a>
+                <a href="#top" class="white-text bold-text">Home</a>
             </li>
             <li>
-                <a href="" class="white-text bold-text">Cakes</a>
+                <a href="#cakes" class="white-text bold-text">Cakes</a>
             </li>
             <li>
-                <a href="" class="white-text bold-text">Soups</a>
+                <a href="#soups" class="white-text bold-text">Soups</a>
             </li>
             <li>
-                <a href="" class="white-text bold-text">Chicken</a>
+                <a href="#chickens" class="white-text bold-text">Chicken</a>
             </li>
             <li>
-                <a href="" class="white-text bold-text">Customers</a>
-            </li>
+                <a href="#customers" class="white-text bold-text">Customers</a>
         </ul>
         <div class="slider">
             <ul class="slides">
                 <li>
-                    <img src="img/cake_fruit.jpg" alt="" class="responsive-img">
+                    <img src="img/cake_fruit.jpg" alt="" class="responsive-img materialboxed">
                 </li>
                 <li>
-                    <img src="img/shrimp_soup.jpg" alt="" class="responsive-img">
+                    <img src="img/shrimp_soup.jpg" alt="" class="responsive-img materialboxed">
                 </li>
                 <li>
-                    <img src="img/chicken_3.jpg" alt="" class="responsive-img">
+                    <img src="img/chicken_3.jpg" alt="" class="responsive-img materialboxed">
                 </li>
                 <li>
-                    <img src="img/dessert_chocolate.jpg" alt="" class="responsive-img">
+                    <img src="img/dessert_chocolate.jpg" alt="" class="responsive-img materialboxed">
                 </li>
                 <li>
-                    <img src="img/ginger_cake.webp" alt="" class="responsive-img">
+                    <img src="img/ginger_cake.webp" alt="" class="responsive-img materialboxed">
                 </li>
             </ul>
         </div>
@@ -135,7 +137,9 @@
                 <h2 class="orange-text text-darken-4">Hello there, foodies!</h2>
                 <p class="intro flow-text T-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, qui unde omnis quisquam culpa nulla, assumenda tenetur consectetur voluptatum ab quis fugiat provident cum cupiditate. Voluptatibus ex iste dolorem maiores quo delectus unde voluptates repellat dolorum odit nesciunt repellendus enim deleniti voluptatum distinctio, dolore illo molestiae! Corrupti nobis alias consectetur sed totam repellendus placeat et modi dolore. Ea qui aliquid dolorum molestias nisi minus esse soluta odit est! Consequuntur, eligendi? Ducimus maiores eaque illo reiciendis cupiditate animi autem velit voluptatum!</p>
 
-                <br><hr><br>
+                <!-- <br><hr><br> -->
+            <div class="divider"></div>
+            <br>
 
                 <!-- Collapsibles -->
                 <div class="row">
@@ -147,10 +151,10 @@
                                     <span class="white-text bold-text">CAKES</span>
                                 </div>
                                 <div class="collapsible-body">
-                                    <img src="img/sponge_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/sponge_cake.webp" alt="" class="responsive-img materialboxed materialboxed">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
                                     <a href="#">
-                                        <span class="bold-text orange darken-4 white-text space z-depth-1">ALL CAKE RECIPES.</span>
+                                        <span class="btn btn-flat bold-text orange darken-4 white-text">ALL CAKE RECIPES.</span>
                                     </a>
                                 </div>
                             </li>
@@ -164,27 +168,27 @@
                                     <span class="white-text bold-text">SOUPS</span>
                                 </div>
                                 <div class="collapsible-body">
-                                    <img src="img/mexican_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/mexican_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
                                     <a href="#">
-                                        <span class="bold-text orange darken-4 white-text space z-depth-1">ALL CAKE RECIPES.</span>
+                                        <span class="btn btn-flat bold-text orange darken-4 white-text">ALL CAKE RECIPES.</span>
                                     </a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="col s12 m12 l4">
-                        <ul class="collapsible popout">
+                        <ul class="collapsible popout" id="customers">
                             <li>
                                 <div class="collapsible-header orange darken-4">
                                     <i class="material-icons white-text">arrow_drop_down_circle</i>
                                     <span class="white-text bold-text">CHICKENS</span>
                                 </div>
                                 <div class="collapsible-body">
-                                    <img src="img/chicken_8.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_8.webp" alt="" class="responsive-img materialboxed materialboxed">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit qui corporis, atque temporibus eveniet placeat!</p>
                                     <a href="#">
-                                        <span class="bold-text orange darken-4 white-text space z-depth-1">ALL CAKE RECIPES.</span>
+                                        <span class="btn btn-flat bold-text orange darken-4 white-text">ALL CAKE RECIPES.</span>
                                     </a>
                                 </div>
                             </li>
@@ -192,6 +196,7 @@
                     </div>
                 </div>
                 <br>
+            <div class="divider"></div>
 
             <!-- Customers comments -->
                 <h3 class="orange-text text-darken-4 center-align">What Our Customers Say . . .</h3>
@@ -203,35 +208,35 @@
                                     <i class="material-icons circle">account_circle</i>
                                 </a>
                                 <span class="bold-text orange-text text-darken-4 title">Uche Emeka</span>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
+                                <p class="grey-text italics">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
                             </li>
                             <li class="collection-item avatar">
                                 <a href="" class="">
                                     <i class="material-icons circle">account_circle</i>
                                 </a>
                                 <span class="bold-text orange-text text-darken-4 title">Favour Busayo</span>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
+                                <p class="grey-text italics">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
                             </li>
                             <li class="collection-item avatar">
                                 <a href="" class="">
                                     <i class="material-icons circle">account_circle</i>
                                 </a>
                                 <span class="bold-text orange-text text-darken-4 title">Theddy Lome</span>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
+                                <p class="grey-text italics">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
                             </li>
                             <li class="collection-item avatar">
                                 <a href="" class="">
                                     <i class="material-icons circle">account_circle</i>
                                 </a>
                                 <span class="bold-text orange-text text-darken-4 title">David Blaze</span>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
+                                <p class="grey-text italics">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
                             </li>
                             <li class="collection-item avatar">
                                 <a href="" class="">
                                     <i class="material-icons circle">account_circle</i>
                                 </a>
                                 <span class="bold-text orange-text text-darken-4 title">Jammy Paulilo</span>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
+                                <p class="grey-text italics">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi est quos voluptas tempore sint commodi obcaecati laudantium consectetur iste!"</p>
                             </li>
                         </ul>
                     </div>
@@ -240,7 +245,9 @@
 
 
         <!-- Cakes -->
-        <div class="parallax-container">
+        <div id="cakes"></div>
+        <img src="img/cake.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%" id="cakes">
+        <div class="parallax-container hide-on-med-and-down" id="cakes">
             <div class="parallax">
                 <img src="img/cake.jpg" alt="" style="width: 100%">
             </div>
@@ -248,7 +255,7 @@
         <br>
 
             <!-- Section Seading, Text, and Cards -->
-            <section id="Heading-Text-and-Cards">
+            <section id="">
                 <div class="container">
                     <h2 class="orange-text text-darken-4">Cakes</h2>
                     <p class="SH-desc T-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut reiciendis reprehenderit, tempore id ullam sapiente minus modi ipsum repudiandae voluptatem porro, velit eius excepturi fuga voluptates eaque numquam rerum perferendis deserunt eveniet! Earum delectus ea distinctio error accusamus exercitationem incidunt? Deleniti est autem sed labore quos! Incidunt facere dicta cum ducimus in vero deleniti ea temporibus, saepe enim omnis impedit.
@@ -260,7 +267,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/sponge_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/sponge_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Sponge Cake</h5>
@@ -275,7 +282,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/velvet_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/velvet_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Velvet Cake</h5>
@@ -290,7 +297,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/courgette_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/courgette_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Courgette Cake</h5>
@@ -309,7 +316,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chocolate_2.webp" alt="" class="responsive-img">
+                                    <img src="img/chocolate_2.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Chocolate Cake</h5>
@@ -324,7 +331,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/coffeeslab_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/coffeeslab_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Coffee Slab Cake</h5>
@@ -339,7 +346,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/pistachio_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/pistachio_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Pistachio Cake</h5>
@@ -358,7 +365,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/polenta_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/polenta_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Polenta Cake</h5>
@@ -373,7 +380,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/buttermilk_cake.webp" alt="" class="responsive-img">
+                                    <img src="img/buttermilk_cake.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Buttermilk Cake</h5>
@@ -388,7 +395,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chocolate_1.webp" alt="" class="responsive-img">
+                                    <img src="img/chocolate_1.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Peanut Cake</h5>
@@ -404,7 +411,9 @@
             </section>
 
             <!-- Soups -->
-            <div class="parallax-container">
+            <div id="soups"></div>
+            <img src="img/soup.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%" id="soups">
+            <div class="parallax-container hide-on-med-and-down" id="soups">
                 <div class="parallax">
                     <img src="img/soup.jpg" alt="" style="width: 100%">
                 </div>
@@ -424,7 +433,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/lentil_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/lentil_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Lentil Soup</h5>
@@ -439,7 +448,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/olive_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/olive_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Olive Soup</h5>
@@ -454,7 +463,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/miso_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/miso_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Miso Soup</h5>
@@ -473,7 +482,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chilli_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/chilli_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Chilli Soup</h5>
@@ -488,7 +497,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/pumpkin_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/pumpkin_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Pumpkin Soup</h5>
@@ -522,7 +531,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/tom_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/tom_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Tom Soup</h5>
@@ -537,7 +546,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/morroco_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/morroco_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Morroco Soup</h5>
@@ -552,7 +561,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/mexican_soup.webp" alt="" class="responsive-img">
+                                    <img src="img/mexican_soup.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">mexican Soup</h5>
@@ -568,7 +577,9 @@
             </section>
 
             <!-- Chickens -->
-            <div class="parallax-container">
+            <div id="chickens"></div>
+            <img src="img/chicken.jpg" alt="" class="responsive-img hide-on-large-only" style="width: 100%" id="chickens">
+            <div class="parallax-container hide-on-med-and-down" id="chickens">
                 <div class="parallax">
                     <img src="img/chicken.jpg" alt="" style="width: 100%">
                 </div>
@@ -588,7 +599,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_5.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_5.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Oregano Wings</h5>
@@ -603,7 +614,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_11.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_11.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Mashed Wings</h5>
@@ -618,7 +629,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_1.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_1.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Buttered Wings</h5>
@@ -637,7 +648,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_8.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_8.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Yogurt Chicken</h5>
@@ -652,7 +663,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_10.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_10.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Chicken Tikka</h5>
@@ -667,7 +678,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_2.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_2.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Chicken Couscous</h5>
@@ -686,7 +697,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/chicken_1.webp" alt="" class="responsive-img">
+                                    <img src="img/chicken_1.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Caramel Chicken</h5>
@@ -701,7 +712,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/ramen.webp" alt="" class="responsive-img">
+                                    <img src="img/ramen.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Chicken Ramen</h5>
@@ -716,7 +727,7 @@
                         <div class="col s12 m12 l4">
                             <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="img/saag.webp" alt="" class="responsive-img">
+                                    <img src="img/saag.webp" alt="" class="responsive-img materialboxed">
                                 </div>
                                 <div class="card-content">
                                     <h5 class="orange-text text-darken-4">Chicken Saag</h5>
@@ -734,9 +745,9 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="page-footer black">
         <!-- Black Space Section -->
-        <section class="Black-Space black">
+        <section class="Black-Space">
             <div class="container">
                 <br>
                 <div class="row">
@@ -755,19 +766,19 @@
                         <h4 class="orange-text text-darken-4">Quick Links</h4>
                             <ul>
                                 <li>
-                                    <a href="" class="white-text text-darken-4">Back to Top</a>
+                                    <a href="#top" class="white-text text-darken-4">Back to Top</a>
                                 </li>
                                 <li>
-                                    <a href="" class="white-text text-darken-4">Cakes</a>
+                                    <a href="#cakes" class="white-text text-darken-4">Cakes</a>
                                 </li>
                                 <li>
-                                    <a href="" class="white-text text-darken-4">Soups</a>
+                                    <a href="#soups" class="white-text text-darken-4">Soups</a>
                                 </li>
                                 <li>
-                                    <a href="" class="white-text text-darken-4">Chickens</a>
+                                    <a href="#chickens" class="white-text text-darken-4">Chickens</a>
                                 </li>
                                 <li>
-                                    <a href="" class="white-text text-darken-4">Customers</a>
+                                    <a href="#customers" class="white-text text-darken-4">Customers</a>
                                 </li>
                             </ul>
                         </a>
@@ -785,6 +796,7 @@
             $('.sidenav').sidenav();
             $('.collapsible').collapsible();
             $('.parallax').parallax();
+            $('.materialboxed').materialbox();
         });
     </script>
 </body>
